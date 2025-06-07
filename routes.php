@@ -27,5 +27,5 @@ $router->get('/clients/{clients}/transactions', TransactionController::class, 'i
 $router->get('/clients/{clients}/transactions/create', TransactionController::class, 'create')->middleware(['auth']);
 $router->post('/clients/{clients}/transactions', TransactionController::class, 'store')->middleware(['auth']);
 
-// Api
+// --- Api ---
 $router->get('/api/clients/{clients}/transactions', TransactionApiController::class, 'index');
