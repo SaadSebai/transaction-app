@@ -15,3 +15,11 @@ A custom PHP MVC app with authentication for administrators to manage clients, r
 - PHP (custom MVC)
 - MySQL
 - JavaScript
+
+## Getting Started
+
+Use the following commands to prepare the project
+
+- installing composer: ```composer i```
+- php database/migration.php
+- php -S localhost:8000 -t public
