@@ -23,9 +23,9 @@ $router->put('/clients/{client}', ClientController::class, 'update')->middleware
 $router->delete('/clients/{client}', ClientController::class, 'destroy')->middleware(['auth']);
 
 // *** Transaction ***
-$router->get('/clients/{clients}/transactions', TransactionController::class, 'index')->middleware(['auth']);
-$router->get('/clients/{clients}/transactions/create', TransactionController::class, 'create')->middleware(['auth']);
-$router->post('/clients/{clients}/transactions', TransactionController::class, 'store')->middleware(['auth']);
+$router->get('/clients/{client}/transactions', TransactionController::class, 'index')->middleware(['auth']);
+$router->get('/clients/{client}/transactions/create', TransactionController::class, 'create')->middleware(['auth']);
+$router->post('/clients/{client}/transactions', TransactionController::class, 'store')->middleware(['auth']);
 
 // --- Api ---
-$router->get('/api/clients/{clients}/transactions', TransactionApiController::class, 'index');
+$router->get('/api/clients/{client}/transactions', TransactionApiController::class, 'index');
