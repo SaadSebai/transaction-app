@@ -1,10 +1,13 @@
 <?php
 
+use App\Core\Router;
 use App\Http\Controllers\Api\TransactionApiController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\TransactionController;
+
+/** @var Router $router */
 
 // --- Guest ---
 $router->get('/', LoginController::class, 'create')->middleware(['guest']);

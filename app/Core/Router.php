@@ -7,6 +7,13 @@ use Exception;
 use InvalidArgumentException;
 use JetBrains\PhpStorm\NoReturn;
 
+/**
+ * @method self get(string $uri, string $controller, string $method)
+ * @method self post(string $uri, string $controller, string $method)
+ * @method self put(string $uri, string $controller, string $method)
+ * @method self patch(string $uri, string $controller, string $method)
+ * @method self delete(string $uri, string $controller, string $method)
+ */
 class Router
 {
     protected array $routes = [];
