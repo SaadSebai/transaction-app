@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Core\Exceptions\ValidationException;
 use App\Core\Session;
 use App\Http\Requests\Clients\ClientRequest;
-use App\Http\Requests\Transactions\indexTransactionRequest;
+use App\Http\Requests\Transactions\IndexTransactionRequest;
 use App\Http\Requests\Transactions\StoreTransactionRequest;
 use App\Services\TransactionService;
 
@@ -23,7 +23,7 @@ class TransactionController
      */
     public function index(mixed $client)
     {
-        $request = new indexTransactionRequest(compact('client'));
+        $request = new IndexTransactionRequest(compact('client'));
 
         $data = $request->validated();
         $start_date = $data['start_date'] ?? null;

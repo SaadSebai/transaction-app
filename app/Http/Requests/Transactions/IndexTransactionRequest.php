@@ -6,7 +6,7 @@ use App\Core\FormRequest;
 use App\Core\Validator;
 use App\Repositories\ClientRepository;
 
-class indexTransactionRequest extends FormRequest
+class IndexTransactionRequest extends FormRequest
 {
 
     /**
